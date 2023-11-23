@@ -1,0 +1,16 @@
+- name: install core packages
+  hosts: all
+  become: yes
+  tasks:
+
+  - name: update repository index
+    apt:
+      update_cache: yes
+
+  - name: install core packages
+    apt:
+      name:
+        - neofetch
+        - nfs-common
+        - zsh
+      update_cache: yes
