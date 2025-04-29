@@ -1,0 +1,13 @@
+---
+- name: Install multiple packages
+  hosts: all
+  tasks:
+    - name: Install necessary packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - ncdu
+        - curl
+        - git
+        - neofetch
