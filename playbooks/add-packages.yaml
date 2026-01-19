@@ -11,3 +11,6 @@
         - curl
         - git
         - neofetch
+        - btop
+        - htop
+        - cmatrix
